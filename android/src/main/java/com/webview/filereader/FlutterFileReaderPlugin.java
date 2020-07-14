@@ -80,8 +80,8 @@ public class FlutterFileReaderPlugin  {
 //     * Plugin registration.
 //     */
     public static void registerWith(Registrar registrar) {
-        FlutterFileReaderPlugin plugin = new FlutterFileReaderPlugin();
-        plugin.init(registrar.context(), registrar.messenger());
+//        FlutterFileReaderPlugin plugin = new FlutterFileReaderPlugin();
+//        plugin.init(registrar.context(), registrar.messenger());
 //        registrar.platformViewRegistry().registerViewFactory("FileReader", new X5FileReaderFactory(registrar.messenger(), registrar.activity(), plugin));
     }
 //
