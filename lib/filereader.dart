@@ -42,7 +42,7 @@ class FileReader {
   }
 
   /// open file when platformview create
-  /// filepath only support local path
+  /// filepath only support ios local path
   void openFile(int platformViewId, String filePath, Function(bool) onOpen) {
     MethodChannel('wv.io/FileReader' + "_$platformViewId")
         .invokeMethod("openFile", filePath)

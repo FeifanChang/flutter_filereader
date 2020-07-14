@@ -59,17 +59,17 @@ class _FileReaderViewState extends State<FileReaderView> {
 
   @override
   Widget build(BuildContext context) {
-    if (Platform.isAndroid || Platform.isIOS) {
+    if (Platform.isIOS) {
       if (_status == FileReaderState.LOADING_ENGINE) {
         return _loadingWidget();
       } else if (_status == FileReaderState.UNSUPPORT_FILE) {
         return _unSupportFile();
       } else if (_status == FileReaderState.ENGINE_LOAD_SUCCESS) {
-        if (Platform.isAndroid) {
-          return _createAndroidView();
-        } else {
-          return _createIosView();
-        }
+//        if (Platform.isAndroid) {
+//          return _createAndroidView();
+//        } else {
+        return _createIosView();
+//        }
       } else if (_status == FileReaderState.ENGINE_LOAD_FAIL) {
         return _enginLoadFail();
       } else if (_status == FileReaderState.FILE_NOT_FOUND) {
@@ -110,12 +110,12 @@ class _FileReaderViewState extends State<FileReaderView> {
         );
   }
 
-  Widget _createAndroidView() {
-    return AndroidView(
-        viewType: "FileReader",
-        onPlatformViewCreated: _onPlatformViewCreated,
-        creationParamsCodec: StandardMessageCodec());
-  }
+//  Widget _createAndroidView() {
+//    return AndroidView(
+//        viewType: "FileReader",
+//        onPlatformViewCreated: _onPlatformViewCreated,
+//        creationParamsCodec: StandardMessageCodec());
+//  }
 
   _onPlatformViewCreated(int id) {
     FileReader.instance.openFile(id, filePath, (success) {
