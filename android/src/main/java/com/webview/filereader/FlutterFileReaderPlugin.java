@@ -1,4 +1,4 @@
-//package com.webview.filereader;
+package com.webview.filereader;
 //
 //import android.content.Context;
 //import android.content.IntentFilter;
@@ -15,7 +15,6 @@
 //import java.lang.reflect.Field;
 //import java.util.HashMap;
 //
-//import io.flutter.embedding.engine.plugins.FlutterPlugin;
 //import io.flutter.embedding.engine.plugins.activity.ActivityAware;
 //import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 //import io.flutter.plugin.common.BinaryMessenger;
@@ -27,6 +26,7 @@
 // * FlutterX5Plugin
 // */
 //public class FlutterFileReaderPlugin implements MethodChannel.MethodCallHandler, FlutterPlugin, ActivityAware {
+public class FlutterFileReaderPlugin  {
 //
 //    private int x5LoadStatus = -1; // -1 未加载状态  5 成功 10 失败
 //
@@ -58,9 +58,9 @@
 //        netBroadcastRegister(context);
 //    }
 //
-//    public FlutterFileReaderPlugin() {
+    public FlutterFileReaderPlugin() {
 //
-//    }
+    }
 //
 //    private void onDestory() {
 //        Log.e("FileReader", "销毁");
@@ -257,5 +257,5 @@
 //
 //    }
 //
-//}
+}
 //
