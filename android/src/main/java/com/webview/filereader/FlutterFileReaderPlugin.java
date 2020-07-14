@@ -15,12 +15,12 @@ package com.webview.filereader;
 //import java.lang.reflect.Field;
 //import java.util.HashMap;
 //
-//import io.flutter.embedding.engine.plugins.activity.ActivityAware;
-//import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
-//import io.flutter.plugin.common.BinaryMessenger;
-//import io.flutter.plugin.common.MethodCall;
-//import io.flutter.plugin.common.MethodChannel;
-//import io.flutter.plugin.common.PluginRegistry.Registrar;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
+import io.flutter.plugin.common.BinaryMessenger;
+import io.flutter.plugin.common.MethodCall;
+import io.flutter.plugin.common.MethodChannel;
+import io.flutter.plugin.common.PluginRegistry.Registrar;
 //
 ///**
 // * FlutterX5Plugin
@@ -79,11 +79,11 @@ public class FlutterFileReaderPlugin  {
 //    /**
 //     * Plugin registration.
 //     */
-//    public static void registerWith(Registrar registrar) {
-//        FlutterFileReaderPlugin plugin = new FlutterFileReaderPlugin();
-//        plugin.init(registrar.context(), registrar.messenger());
+    public static void registerWith(Registrar registrar) {
+        FlutterFileReaderPlugin plugin = new FlutterFileReaderPlugin();
+        plugin.init(registrar.context(), registrar.messenger());
 //        registrar.platformViewRegistry().registerViewFactory("FileReader", new X5FileReaderFactory(registrar.messenger(), registrar.activity(), plugin));
-//    }
+    }
 //
 //
 //    public void netBroadcastRegister(final Context context) {
